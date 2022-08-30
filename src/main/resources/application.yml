@@ -1,0 +1,16 @@
+micronaut:
+  application:
+    name: caw
+datasources:
+  default:
+    driverClassName: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/BMS_Micronaut?currentSchema="BMS_db"
+    username: abhinav
+    password: root
+    db-type: postgresql
+    schema-generate: CREATE_DROP
+    dialect: POSTGRES
+netty:
+  default:
+    allocator:
+      max-order: 3
